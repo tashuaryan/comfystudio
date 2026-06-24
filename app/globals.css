@@ -1,26 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Importing the elegant fonts based on your references */
+@theme {
+  /* Font Variables */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+  
+  /* Brand Colors from Mockup */
+  --color-brand-plum: #8b4a62;
+  --color-brand-plum-dark: #633043;
+  --color-brand-gold: #c8a97e;
+  --color-brand-cream: #fdfaf6;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-brand-cream);
+    color: #2d3748;
+  }
+  
+  /* All headings default to the elegant serif */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  /* Subtle, premium 3D hover effect */
+  .pop-out-effect {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .pop-out-effect:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 25px -5px rgba(139, 74, 98, 0.15), 0 8px 10px -6px rgba(139, 74, 98, 0.1);
+    z-index: 10;
+  }
 }
