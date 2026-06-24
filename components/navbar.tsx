@@ -90,17 +90,17 @@ export default function Navbar() {
 
             {showCategories && (
               <div className="absolute top-full left-0 w-64 bg-white border border-gray-200 shadow-xl rounded-b-md z-50 text-gray-800 overflow-hidden">
-                <Link href="/shop?category=Crochet+Scrunchy" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] border-b border-gray-100 font-medium transition-colors">Crochet Scrunchy</Link>
-                <Link href="/shop?category=Crochet+Keychain" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] border-b border-gray-100 font-medium transition-colors">Crochet Keychain</Link>
-                <Link href="/shop?category=Crochet+Teddy+Bear" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] border-b border-gray-100 font-medium transition-colors">Crochet Teddy Bear</Link>
-                <Link href="/shop?category=Crochet+Coaster" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] font-medium transition-colors">Crochet Coaster</Link>
+                <Link href="/category/crochet-scrunchy" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] border-b border-gray-100 font-medium transition-colors">Crochet Scrunchy</Link>
+                <Link href="/category/crochet-keychain" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] border-b border-gray-100 font-medium transition-colors">Crochet Keychain</Link>
+                <Link href="/category/crochet-teddy-bear" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] border-b border-gray-100 font-medium transition-colors">Crochet Teddy Bear</Link>
+                <Link href="/category/crochet-coaster" className="block px-5 py-3 hover:bg-[#FAF8F5] hover:text-[#8b4a62] font-medium transition-colors">Crochet Coaster</Link>
               </div>
             )}
           </div>
 
           <div className="flex items-center gap-6 ml-4 font-medium tracking-wide">
-            <Link href="/shop?category=Sale" className="py-3 hover:text-[#c8a97e] transition-colors">Today's Deals</Link>
-            <Link href="/shop?category=Sale" className="py-3 hover:text-[#c8a97e] transition-colors">Sale</Link>
+            <Link href="/category/sale" className="py-3 hover:text-[#c8a97e] transition-colors">Today's Deals</Link>
+            <Link href="/category/sale" className="py-3 hover:text-[#c8a97e] transition-colors">Sale</Link>
             <Link href="/" className="py-3 hover:text-[#c8a97e] transition-colors">Home</Link>
           </div>
         </div>
